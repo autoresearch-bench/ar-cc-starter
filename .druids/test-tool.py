@@ -72,10 +72,7 @@ async def program(ctx, **kwargs):
 {step4}
 {step5}
 === END ==="""
-            ctx.done(summary)
             return summary
 
         except Exception as e:
-            error_msg = f"TOOL ERROR: {e}\n{traceback.format_exc()}"
-            ctx.done(error_msg)
-            return error_msg
+            return f"TOOL ERROR: {e}\n{traceback.format_exc()}"
