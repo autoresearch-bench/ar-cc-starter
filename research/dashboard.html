@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Autoresearch Dashboard</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; background: #f8f9fa; color: #333; }
+  h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+  .metric { font-size: 2em; font-weight: bold; color: #2563eb; }
+  .card { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #eee; }
+  th { background: #f1f5f9; font-weight: 600; }
+  .status-keep { color: #16a34a; font-weight: bold; }
+  .status-discard { color: #dc2626; }
+  .status-crash { color: #9333ea; }
+  .status-pending { color: #6b7280; }
+</style>
+</head>
+<body>
+<h1>Autoresearch Dashboard</h1>
+
+<div class="card">
+  <h2>Current Best</h2>
+  <p class="metric">val_bpb: TBD (awaiting baseline)</p>
+  <p>Branch: research/best</p>
+</div>
+
+<div class="card">
+  <h2>Experiment Log</h2>
+  <table>
+    <tr><th>#</th><th>Description</th><th>val_bpb</th><th>Status</th></tr>
+    <tr><td>0</td><td>Baseline (6L/512d/8h, BS=64, LR=3e-4)</td><td>TBD</td><td class="status-pending">pending</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Research Phase</h2>
+  <p><strong>Phase 1:</strong> Baseline + Initial architecture/hyperparameter exploration</p>
+  <p><strong>Budget:</strong> 2.0 GPU-hours (~24 experiments)</p>
+  <p><strong>Used:</strong> 0 experiments</p>
+</div>
+
+<div class="card">
+  <h2>Key Observations</h2>
+  <ul>
+    <li>Awaiting baseline result to begin experimentation</li>
+  </ul>
+</div>
+</body>
+</html>
